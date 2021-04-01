@@ -30,17 +30,18 @@
 
 <!--Feature Image-->
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-7">
           <h1>Featured Mars Image</h1>
-          <br>
-          <img src={{ mars_info.featured_image_url }} alt='featured_image_url', id='single-image'>
+          <img src={{ mars_info.featured_image_url }} alt='featured_image', id='single-image'>
         </div>
 
 <!--Mars Data-->
-        <div class="col-sm-4">
+        <div class="col-sm-5">
           <h1>Mars Data</h1>
-          <table class="table table-bordered" style="text-align:center">
-            {{ mars_info.mars_data|safe }}
+          <table>
+            <th>
+              {{ mars_info.mars_data|safe }}
+            </th>
           </table>
         </div>
       </div>
@@ -49,8 +50,22 @@
 
 <!--Hemisphere Images-->
     
-<div>
-
+<div class='container'>
+  <div class='col-sm-12' style="text-align: center;">
+    <h1>Mars Hemisphers</h1>
+  </div>
+    <div class='col-sm-3'>
+      <img scr="{{ mars_info.image_urls }}" alt='image_url_uno'>
+    </div>
+    <div class='col-sm-3'>
+      <p>2</p>
+    </div>
+    <div class='col-sm-3'>
+      <p>3</p>
+    </div>
+    <div class='col-sm-3'>
+      <p>4</p>
+    </div>
 
 </div>
 
