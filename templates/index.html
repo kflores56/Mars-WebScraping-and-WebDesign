@@ -52,19 +52,21 @@
     
 <div class='container'>
   <div class='col-sm-12' style="text-align: center;">
-    <h1>Mars Hemisphers</h1>
+    <h1>Mars Hemispheres</h1>
   </div>
-    <div class='col-sm-3'>
-      <img scr="{{ mars_info.image_urls }}" alt='image_url_uno'>
-    </div>
-    <div class='col-sm-3'>
-      <p>2</p>
-    </div>
-    <div class='col-sm-3'>
-      <p>3</p>
-    </div>
-    <div class='col-sm-3'>
-      <p>4</p>
+    <div class='col-sm-12'>
+      
+      
+      {% for item in mars_info.image_urls %}
+      <div class="col-md-3">
+          <div class="card text-white bg-dark" style="margin: 30px;">
+              <img class="card-img-top" src={{ item.image_link }} width='200' hight='200' />
+              <div class="card-body">
+                  <p class="card-text">{{ item.title }}</p>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
     </div>
 
 </div>
