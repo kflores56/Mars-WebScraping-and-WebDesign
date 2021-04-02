@@ -40,7 +40,7 @@ MongoDB with Flask was used with the goal of creating a new HTML page that displ
 
 * A template HTML file called `index.html` was created to take the mars data dictionary and display all of the data in the appropriate HTML elements. The following is the final application: 
 
-<img src="https://github.com/kflores56/web-scraping-challenge/blob/main/images/top_pg.png", width="600"/> 
+<img src="https://github.com/kflores56/web-scraping-challenge/blob/main/images/top_pg.png" width="600"/> 
 
-<img src="https://github.com/kflores56/web-scraping-challenge/blob/main/images/bottom_pg.png", width="600"/> 
+<img src="https://github.com/kflores56/web-scraping-challenge/blob/main/images/bottom_pg.png" width="600"/> 
 
